@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Strings related to main -->
+    <string name="app_name">MDR Control Panel - Main</string>
+    <string name="title_home">Home</string>
+    <string name="title_telemetry">Telemetry</string>
+    <string name="title_help">Help</string>
+    <string name="title_admin">Admin Login</string>
+    <string name="button">*</string>
+    <string name="start_telemetry">Start Telemetry:</string>
+    <string name="left">LEFT</string>
+    <string name="center">CENTER</string>
+    <string name="right">RIGHT</string>
+
+    <!-- Strings related to telemetry -->
+    <string name="title_activity_telemetry">MDR Control Panel - Telemetry</string>
+    <string name="collect_telemetry">Collect Telemetry</string>
+    <string name="data_display">Data will display here…</string>
+
+    <!-- Strings related to help -->
+    <string name="title_activity_help">MDR Control Panel - Help</string>
+    <string name="gps_check_button">GPS Check</string>
+    <string name="batery_check_button">Battery and Therm Check</string>
+
+
+
+</resources>

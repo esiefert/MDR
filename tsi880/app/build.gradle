@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'org.jsoup:jsoup:1.11.3'
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'Sunshine2018'
+            storeFile file('/Users/mcb2/AndroidStudioProjects/tsi880/app/key.jks')
+            storePassword 'Sunshine2018'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.yesinc.tsi880"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 9
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+            jniDebuggable true
+            renderscriptDebuggable true
+            minifyEnabled true
+            pseudoLocalesEnabled true
+        }
+    }
+    buildToolsVersion '27.0.3'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
